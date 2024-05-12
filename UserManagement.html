@@ -1,0 +1,1885 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.svg">
+    <link rel="stylesheet" href="Css/font-awesome_6.4.2_css_all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+
+    <link href="Css/anychart-ui.min.css" type="text/css" rel="stylesheet">
+    <link href="css/anychart-font.min.css" type="text/css" rel="stylesheet">
+
+    <script src="Js/anychart-base.min.js"></script>
+    <script src="Js/anychart-cartesian-3d.min.js"></script>
+    <script src="Js/anychart-ui.min.js"></script>
+    <script src="Js/anychart-exports.min.js"></script>
+
+
+    <script defer src="JS/jquery-3.7.0.js"></script>
+    <script defer src="JS/jquery.dataTables.min.js"></script>
+    <script defer src="JS/dataTables.bootstrap5.min.js"></script>
+    <script defer src="JS/Dash.js"></script>
+
+</head>
+
+
+<body>
+    <div class="row m-0 ">
+        <div class="col-2 ps-0 ">
+            <div class="sidebar-boxD bg-dash shadow-lg">
+
+                <div class="sidebar-container bg-dash p-2">
+                    <div class="mt-2">
+                        <a class="navbar-brand " href="#"><img class="d-none d-md-block" src="images/Logo.svg"
+                                width="110px" alt="Logo">
+                            <img class="d-block d-md-none ms-2" src="images/logm.svg" width="100px" alt="Logo"></a>
+                        <div class="dropdown-divider"></div>
+                    </div>
+                    <div class="form-row d-flex align-items-center bg-dash1 flex-column">
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+                            <a class="nav-link tab-Dash set-tab btn btn-md " id="tap1" href="Home-Page.html">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/Shape (1).svg" class="m-auto m-lg-0 " alt="">
+                                    <h6 class=" d-none m-0  d-lg-block ms-2">HomePage</h6>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+
+                            <a class="nav-link tab-Dash set-tab btn btn-md " id="tap2">
+                                <div class="d-flex align-items-center  ">
+                                    <img src="images/statis.svg" class="m-auto m-lg-0" alt="">
+                                    <h6 class=" d-none m-0 d-lg-block ms-2 ">Statistical</h6>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+                            <a class="nav-link tab-Dash set-tab btn btn-md  " id="tap3">
+                                <div class="d-flex align-items-center ">
+                                    <img src="images/userM .svg" class="m-auto m-lg-0" alt="">
+                                    <h6 class=" d-none m-0  d-lg-block ms-2">User Management</h6>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+                            <a class="nav-link tab-Dash set-tab btn btn-md " id="tap4">
+                                <div class="d-flex align-items-center p-1">
+                                    <img src="images/3.svg" class="m-auto m-lg-0" alt="">
+                                    <h6 class=" d-none m-0 d-lg-block ms-2">Data Management</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+                            <a class="nav-link tab-Dash set-tab btn btn-md " id="tap5">
+                                <div class="d-flex align-items-center p-1">
+                                    <img src="images/Permission.svg" class="m-auto m-lg-0" alt="">
+                                    <h6 class=" d-none m-0 d-lg-block ms-2">Permission</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class=" form-group  col-12 border  mb-4 bg-white rounded ">
+                            <a class="nav-link tab-Dash set-tab btn btn-md" id="tap6">
+                                <div class="d-flex align-items-center p-1">
+                                    <img src="images/logout.svg" class="m-auto m-lg-0" alt="">
+                                    <h6 class=" d-none m-0 d-lg-block ms-2">System Logs</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-10 mt-2 container">
+            <nav class="navbar navbar-expand-lg navbar-light  p-0  shadow-lg ">
+                <div class="container-fluid">
+                    <input type="search" id="search-nav" class="form-control w-50 position-relative ps-5">
+                    <img src="images/Search.svg" class="cursor-pointer position-absolute ps-2" alt="">
+                    <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+
+
+
+                        <ul class="navbar-nav ms-auto flex-row d-lg-inline-flex align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark " href="Home-Page.html" target="blank"><img
+                                        src="images/home.png" width="25px" alt=""></a>
+                            </li>
+                            <li class="nav-item mx-2 dropdown">
+                                <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="images/Frame.svg" alt="">
+                                </a>
+                                <div class="dropdown-menu p-0 " style="left: -336px; width: 400px">
+                                    <a class="dropdown-item notif" href="#">
+                                        <div class="d-flex align-items-center field">
+                                            <label class="cl-checkbox ">
+                                                <input class="checkbox-w" checked="false" type="checkbox">
+                                                <span></span>
+                                            </label>
+                                            <img class="rounded-circle img-fluid border ms-2  " src="images/Frame.svg"
+                                                alt="" width="43px" height="43px">
+                                            <div class="mt-auto ms-2">
+                                                <p class="lead m-0">HR.Lana</p>
+                                                <p class="m-0">Edit the employment field description</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a class="dropdown-item notif" href="#">
+                                        <div class="d-flex align-items-center field">
+                                            <label class="cl-checkbox ">
+                                                <input class="checkbox-w" checked="false" type="checkbox">
+                                                <span></span>
+                                            </label>
+                                            <img class="rounded-circle img-fluid border ms-2  " src="" alt=""
+                                                width="43px" height="43px">
+                                            <div class="mt-auto ms-2">
+                                                <p class="lead m-0">HR.Lana</p>
+                                                <p class="m-0">Edit the employment field description</p>
+                                            </div>
+                                        </div>
+                                    </a><a class="dropdown-item notif" href="#">
+                                        <div class="d-flex align-items-center field ">
+                                            <label class="cl-checkbox ">
+                                                <input class="checkbox-w" checked="false" type="checkbox">
+                                                <span></span>
+                                            </label>
+                                            <img class="rounded-circle img-fluid border ms-2  " src="" alt=""
+                                                width="43px" height="43px">
+                                            <div class="mt-auto ms-2">
+                                                <p class="lead m-0">HR.Lana</p>
+                                                <p class="m-0">Edit the employment field description</p>
+                                            </div>
+                                        </div>
+                                    </a><a class="dropdown-item notif" href="#">
+                                        <div class="d-flex align-items-center field">
+                                            <label class="cl-checkbox ">
+                                                <input class="checkbox-w" checked="false" type="checkbox">
+                                                <span></span>
+                                            </label>
+                                            <img class="rounded-circle img-fluid border ms-2  " src="" alt=""
+                                                width="43px" height="43px">
+                                            <div class="mt-auto ms-2">
+                                                <p class="lead m-0">HR.Lana</p>
+                                                <p class="m-0">Edit the employment field description</p>
+                                            </div>
+                                        </div>
+                                    </a><a class="dropdown-item notif" href="#">
+                                        <div class="d-flex align-items-center field">
+                                            <label class="cl-checkbox ">
+                                                <input class="checkbox-w" checked="false" type="checkbox">
+                                                <span></span>
+                                            </label>
+                                            <img class="rounded-circle img-fluid border ms-2  " src="" alt=""
+                                                width="43px" height="43px">
+                                            <div class="mt-auto ms-2">
+                                                <p class="lead m-0">HR.Lana</p>
+                                                <p class="m-0">Edit the employment field description</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link text-dark " href="" target="blank"><img
+                                        src="images/icons8-logout-30.png" width="25px" alt=""></a>
+                            </li>
+                            </li>
+
+                            <li class="nav-item act">
+                                <a class="nav-link mx-2 active" aria-current="page" href="#">
+                                    <div class="navbar-nav flex-column">
+                                        <h6 class="nav-item m-0" id="username">Sleman Hassn</h6>
+                                        <p class="nav-item disabled m-0" id="adminname">User</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="d-none" data-tabId="tap1"></div>
+            <div class="d-none " data-tabId="tap2">
+                <div class="container-fluid px-5  ">
+                    <div class="row mt-5">
+                        <div class="col-12 col-md-6 mb-2 mb-md-0 ">
+                            <div id="container1" class="shadow-lg w-100" style=" height: 300px;"></div>
+                        </div>
+                        <div class="col-12 col-md-6  mb-2 mb-md-0 ">
+                            <div id="container2" class="shadow-lg w-100" style=" height: 300px;"></div>
+                        </div>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-12 col-md-6  mb-2 mb-md-0">
+                            <div id="container3" class="shadow-lg w-100" style=" height: 300px;"></div>
+
+                        </div>
+                        <div class="col-12 col-md-6  mb-2 mb-md-0">
+                            <div id="container4" class="shadow-lg w-100" style=" height: 300px;"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" d-none" data-tabId="tap3">
+                <div class="container-fluid px-5 shadow-lg">
+                    <div class="d-flex justify-content-between align-items-center mx-auto mt-5 ">
+                        <h1 class="text-col">User Management </h1>
+                        <div>
+                            <a class="line btn btn-primary btn-md" id="add-t"
+                                style="margin-right: 15px; width: 130px;">Add
+                            </a>
+                            <a class=" btn btn-success add-Det btn-md" id=""
+                                style="margin-right: 15px; width: 130px;">Edit
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider "></div>
+                    <div class="table-responsive pb-3">
+                        <table id="mytableUs"
+                            class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                            style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>UserID</th>
+                                    <th>Deparment</th>
+                                    <th>User FullName</th>
+                                    <th>User Name</th>
+                                    <th>Password</th>
+                                    <th>Last Login</th>
+                                    <th>Auth</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3102</td>
+                                    <td>FrontEnd</td>
+                                    <td>Sleman Hassn</td>
+                                    <td>Sleman</td>
+                                    <td>31023102</td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                    <div class="overlay shadow-lg" rememberLastState="false" style="display: none;">
+                        <div
+                            class="container Add-click w-100 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                            <form class="d-flex  align-items-center  p-2 rounded ">
+                                <h1 class="text-col h4">Open Demand</h1>
+                            </form>
+                            <div class="text-center">
+                                <div class="error">
+                                    <h6 class="text-danger">error!</h6>
+                                </div>
+                                <div class="correct d-none ">
+                                    <h6 class="text-success">Correct</h6>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class=" p-2">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class=" mb-3">
+                                                <label for="user-id1">User ID</label>
+                                                <input type="text" class="form-control" id="user-id1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="dep1">Department</label>
+                                                <select class="form-select" id="dep6">
+
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="user-fullname1">User FullName</label>
+                                                <input type="text" class="form-control" id="user-fullname1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="user-name2">User Name</label>
+                                                <input type="text" class="form-control" id="user-name2">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class=" mb-3">
+                                                <label for="password2">Password</label>
+                                                <input type="password" id="password2" class="form-control">
+                                            </div>
+                                            <div class=" mb-3">
+                                                <label for="last-login2">Last Login</label>
+                                                <input type="time" id="last-login2" class="form-control">
+                                            </div>
+                                            <div class=" mb-3">
+                                                <label for="auth5">Auth</label>
+                                                <select class="form-select" id="auth5">
+                                                    <option value="true">True</option>
+                                                    <option value="false">False</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                        <input type="submit" class="line btn btn-primary btn-md" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" value="Submit"></input>
+                                        <input type="button" id="close" class="line btn btn-primary ms-1 btn-md"
+                                            value="Cancel"></input>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay overlayDet shadow-lg" style="display: none;">
+                        <div
+                            class="container Add-click w-100 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                            <form class="d-flex  align-items-center  p-2 rounded ">
+                                <h1 class="text-col h4">Open Demand</h1>
+                                <select class="form-select w-25 ms-5" name="" id=""></select>
+                            </form>
+                            <div class="text-center">
+                                <div class="error">
+                                    <h6 class="text-danger">error!</h6>
+                                </div>
+                                <div class="correct d-none ">
+                                    <h6 class="text-success">Correct</h6>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <div class=" p-2">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class=" mb-3">
+                                                <label for="user-id1">User ID</label>
+                                                <input type="text" class="form-control" id="user-id1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="dep3">Department</label>
+                                                <select class="form-select" id="dep3">
+
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="user-fullname1">User FullName</label>
+                                                <input type="text" class="form-control" id="user-fullname1">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="user-name2">User Name</label>
+                                                <input type="text" class="form-control" id="user-name2">
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class=" mb-3">
+                                                <label for="password2">Password</label>
+                                                <input type="password" id="password2" class="form-control">
+                                            </div>
+                                            <div class=" mb-3">
+                                                <label for="last-login2">Last Login</label>
+                                                <input type="time" id="last-login2" class="form-control">
+                                            </div>
+                                            <div class=" mb-3">
+                                                <label for="auth4">Auth</label>
+                                                <select class="form-select" id="auth4">
+                                                    <option value="true">True</option>
+                                                    <option value="false">False</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                        <input type="button" id="Det" class=" btn btn-danger me-1 btn-md"
+                                            value="Delete"></input>
+                                        <input type="submit" class="line btn btn-primary btn-md" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal" value="Submit"></input>
+                                        <input type="button" id="closeDet" class="line btn btn-primary ms-1 btn-md"
+                                            value="Cancel"></input>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" d-none" data-tabId="tap4">
+
+                <div class="tabs position-relative mt-5 shadow-lg pt-3 px-2">
+
+                    <ul class="nav nav-tabs mb-2" data-bs-toggle="tabs">
+                        <li class="nav-item">
+                            <a class="nav-link tab-set btn btn-md " data-bs-toggle="tab" href="#tab1">Nationality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-set btn btn-md" data-bs-toggle="tab" href="#tab2">Department</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link tab-set btn btn-md" data-bs-toggle="tab" href="#tab3">Visasponsor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-set btn btn-md" data-bs-toggle="tab" href="#tab4">TimeTable</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-set btn btn-md" data-bs-toggle="tab" href="#tab5">Position</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link tab-set btn btn-md" data-bs-toggle="tab" href="#tab6">Doc</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content py-1 ">
+                        <div class="dropdown-divider "></div>
+                        <div class="tab-pane " id="tab1">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-t5" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t1" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable4"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="12" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay5 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="title">Title</label>
+                                                        <input type="text" class="form-control" id="titleN">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="description">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionN">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-5"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay overlayE1 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger d-none">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="title">Title</label>
+                                                        <input type="text" class="form-control" id="titleN">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="description">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionN">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-E1"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tab2">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-t1" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t2" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable5"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="2" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay1  shadow-lg" style="display: none;">
+                                <div
+                                    class="container  Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="title1">Title</label>
+                                                        <input type="text" class="form-control" id="title">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="description1">Description</label>
+                                                        <input type="text" class="form-control" id="description">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" id="submit-dep" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close1"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay overlayE2 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger d-none">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="title">Title</label>
+                                                        <input type="text" class="form-control" id="titleN">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="description">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionN">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-E2"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="tab-pane" id="tab3">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-t2" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t3" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable6"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="3" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay2 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="titleV">Title</label>
+                                                        <input type="text" class="form-control" id="titleV">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="descriptionV">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionV">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close2"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay overlayE3 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger d-none">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="title">Title</label>
+                                                        <input type="text" class="form-control" id="titleN">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="description">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionN">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-E3"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane " id="tab4">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-t3" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t4" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable7"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Total_Duty_on_Saturday</th>
+                                            <th>Break_on_Saturday</th>
+                                            <th>Working_Hours_on_Saturday</th>
+                                            <th>Saturday_Start</th>
+                                            <th>Saturday_End</th>
+                                            <th>Total_Duty_on_Sunday</th>
+                                            <th>Break_on_Sunday</th>
+                                            <th>Working_Hours_on_Sunday</th>
+                                            <th>Sunday_Start</th>
+                                            <th>Sunday_End</th>
+                                            <th>Total_Duty_on_Monday</th>
+                                            <th>Break_on_Monday</th>
+                                            <th>Working_Hours_on_Monday</th>
+                                            <th>Monday_Start</th>
+                                            <th>Monday_End</th>
+                                            <th>Total_Duty_on_Tuesday</th>
+                                            <th>Break_on_Tuesday</th>
+                                            <th>Working_Hours_on_Tuesday</th>
+                                            <th>Tuesday_Start</th>
+                                            <th>Tuesday_End</th>
+                                            <th>Total_Duty_on_Wednesday</th>
+                                            <th>Break_on_Wednesday</th>
+                                            <th>Working_Hours_on_Wednesday</th>
+                                            <th>Wednesday_Start</th>
+                                            <th>Wednesday_End</th>
+                                            <th>Total_Duty_on_Thursday</th>
+                                            <th>Break_on_Thursday</th>
+                                            <th>Working_Hours_on_Thursday</th>
+                                            <th>Thursday_Start</th>
+                                            <th>Thursday_End</th>
+                                            <th>Total_Duty_on_Friday</th>
+                                            <th>Break_on_Friday</th>
+                                            <th>Working_Hours_on_Friday</th>
+                                            <th>Friday_Start</th>
+                                            <th>Friday_End</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="17" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay3 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-100  bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="p-2">
+                                        <form action="/timetable/create" class="p-2 " method="post">
+                                            <div class="row my-1 h6 align-items-center text-end">
+                                                <div class="col-md-1 ">
+                                                    <label class="mb-1" for="title">Title</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control  mb-1  " type="text" name="title"
+                                                        id="titlet">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="Dep">Dep No.</label>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <input class="form-control  mb-1  " type="text" name="Dep"
+                                                        id="dep5">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="title">Remarks</label>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <select class="form-select">
+                                                        <option value="true">True</option>
+                                                        <option value="false">False</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row my-1 h6 text-md-center">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-1 " for=""></label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1  " for="total_duty">Total Duty</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="beake_">Break on Saturday</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="working">Working Hours</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="start"> Start</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="end"> End</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1 ">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Saturday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_sat" id="total_duty_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_sat"
+                                                        id="beake_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_sat"
+                                                        id="working_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Sat_start"
+                                                        id="Sat_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Sat_end"
+                                                        id="Sat_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Sunday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_sun" id="total_duty_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_sun"
+                                                        id="beake_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_sun"
+                                                        id="working_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Sun_start"
+                                                        id="Sun_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Sun_end"
+                                                        id="Sun_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Monday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Mon" id="total_duty_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Mon"
+                                                        id="beake_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Mon"
+                                                        id="working_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Mon_start"
+                                                        id="Mon_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Mon_end"
+                                                        id="Mon_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Tuesday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Tue" id="total_duty_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Tue"
+                                                        id="beake_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Tue"
+                                                        id="working_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Tue_start"
+                                                        id="Tue_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Tue_end"
+                                                        id="Tue_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Wednesday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Wed" id="total_duty_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Wed"
+                                                        id="beake_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Wed"
+                                                        id="working_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Wed_start"
+                                                        id="Wed_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Wed_end"
+                                                        id="Wed_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Thursday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Thu" id="total_duty_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Thu"
+                                                        id="beake_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Thu"
+                                                        id="working_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time"
+                                                        pattern="[0-2]?[0-9]:[0-5][0-9]  name=" Thu_start"
+                                                        id="Thu_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 text-center" type="text" name="time"
+                                                        id="Thu_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Friday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Fri" id="total_duty_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Fri"
+                                                        id="beake_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Fri"
+                                                        id="working_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Fri_start"
+                                                        id="Fri_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Fri_end"
+                                                        id="Fri_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    style="width: 80px;" value="Add"></input>
+                                                <input type="button" id="clear" class="line btn btn-primary ms-1 btn-md"
+                                                    style="width: 80px;" value="Clear"></input>
+                                                <input type="button" id="close3"
+                                                    class="line btn btn-primary ms-1 btn-md" style="width: 80px;"
+                                                    value="Cancel"></input>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="overlay overlayE4 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-100  bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error d-none">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class="p-2">
+                                        <form action="/timetable/create" class="p-2 " method="post">
+                                            <div class="row my-1 h6 align-items-center text-end">
+                                                <div class="col-md-1 ">
+                                                    <label class="mb-1" for="title">Title</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control  mb-1  " type="text" name="title"
+                                                        id="titlet">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="Dep">Dep No.</label>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <input class="form-control  mb-1  " type="text" name="Dep"
+                                                        id="dep5">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="title">Remarks</label>
+                                                </div>
+                                                <div class="col-md-2 ">
+                                                    <select class="form-select">
+                                                        <option value="true">True</option>
+                                                        <option value="false">False</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row my-1 h6 text-md-center">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-1 " for=""></label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1  " for="total_duty">Total Duty</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="beake_">Break on Saturday</label>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="working">Working Hours</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="start"> Start</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="mb-1 " for="end"> End</label>
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1 ">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Saturday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_sat" id="total_duty_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_sat"
+                                                        id="beake_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_sat"
+                                                        id="working_sat">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Sat_start"
+                                                        id="Sat_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Sat_end"
+                                                        id="Sat_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Sunday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_sun" id="total_duty_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_sun"
+                                                        id="beake_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_sun"
+                                                        id="working_sun">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Sun_start"
+                                                        id="Sun_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Sun_end"
+                                                        id="Sun_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Monday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Mon" id="total_duty_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Mon"
+                                                        id="beake_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Mon"
+                                                        id="working_Mon">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Mon_start"
+                                                        id="Mon_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Mon_end"
+                                                        id="Mon_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Tuesday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Tue" id="total_duty_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Tue"
+                                                        id="beake_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Tue"
+                                                        id="working_Tue">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Tue_start"
+                                                        id="Tue_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Tue_end"
+                                                        id="Tue_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Wednesday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Wed" id="total_duty_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Wed"
+                                                        id="beake_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Wed"
+                                                        id="working_Wed">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Wed_start"
+                                                        id="Wed_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Wed_end"
+                                                        id="Wed_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Thursday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Thu" id="total_duty_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Thu"
+                                                        id="beake_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Thu"
+                                                        id="working_Thu">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time"
+                                                        pattern="[0-2]?[0-9]:[0-5][0-9]  name=" Thu_start"
+                                                        id="Thu_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 text-center" type="text" name="time"
+                                                        id="Thu_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="row my-1">
+                                                <div class="col-md-1 me-5 me-sm-0">
+                                                    <label class="mb-3 h6 ">Friday</label>
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number"
+                                                        name="total_duty_Fri" id="total_duty_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="number" name="beake_Fri"
+                                                        id="beake_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="number" name="working_Fri"
+                                                        id="working_Fri">
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1 " type="time" name="Fri_start"
+                                                        id="Fri_start">
+
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <input class="form-control mb-1  " type="time" name="Fri_end"
+                                                        id="Fri_end">
+
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    style="width: 80px;" value="Add"></input>
+                                                <input type="button" id="clear" class="line btn btn-primary ms-1 btn-md"
+                                                    style="width: 80px;" value="Clear"></input>
+                                                <input type="button" id="close-E4"
+                                                    class="line btn btn-primary ms-1 btn-md" style="width: 80px;"
+                                                    value="Cancel"></input>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab5">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-x" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t5" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable9"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="3" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay4 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="titleX">Title</label>
+                                                        <input type="text" class="form-control" id="titlex">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="descriptionVx">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionVx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close2x"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay overlayE5 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error d-none">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="titleX">Title</label>
+                                                        <input type="text" class="form-control" id="titlex">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="descriptionVx">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionVx">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-E5"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tab6">
+                            <div class="text-end s mt-1 mb-3">
+                                <button type="button" id="add-z2" class=" btn btn-primary line btn-md"
+                                    style="width: 130px;">Add</button>
+                                <button type="button" id="edit-t6" class=" btn btn-success  btn-md"
+                                    style="width: 130px;">Edit</button>
+                            </div>
+                            <div class="table-responsive ">
+                                <table id="mytable10"
+                                    class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                    style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td><a href="#" id="3" class="btn btn-success  py-1"
+                                                    style="width: 130px;">Delete</a>
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                            <div class="overlay overlay6 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="titleVz">Title</label>
+                                                        <input type="text" class="form-control" id="titleVz">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="descriptionVz">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionVz">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close2z2"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay overlayE6 shadow-lg" style="display: none;">
+                                <div
+                                    class="container Add-click w-50 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+                                    <form class="d-flex  align-items-center  p-2 rounded ">
+                                        <h1 class="text-col h4">Open Demand</h1>
+                                        <select class="form-select w-25 ms-5" name="" id=""></select>
+                                    </form>
+                                    <div class="text-center">
+                                        <div class="error d-none">
+                                            <h6 class="text-danger">error!</h6>
+                                        </div>
+                                        <div class="correct d-none ">
+                                            <h6 class="text-success">Correct</h6>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-divider"></div>
+                                    <div class=" p-2">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 ">
+                                                    <div class=" mb-3">
+                                                        <label for="titleVz">Title</label>
+                                                        <input type="text" class="form-control" id="titleVz">
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 ">
+                                                    <div class="mb-3">
+                                                        <label for="descriptionVz">Description</label>
+                                                        <input type="text" class="form-control" id="descriptionVz">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex  position-absolute" style="right: 30px;top: 21px;">
+                                                <input type="submit" class="line btn btn-primary btn-md"
+                                                    data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                    value="Submit"></input>
+                                                <input type="button" id="close-E6"
+                                                    class="line btn btn-primary ms-1 btn-md" value="Cancel"></input>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" d-none" data-tabId="tap5">
+                <div class="container-fluid px-5 shadow-lg">
+                    <div class="d-flex justify-content-between align-items-center mx-auto mt-5 ">
+                        <h1 class="text-col">Permission</h1>
+                        <div>
+                            <a href="AddPer.html" class="line btn btn-primary btn-md" id="add-p"
+                                style="margin-right: 15px; width: 130px;">Add
+                            </a>
+                            <a class=" btn btn-success  btn-md" id="add-pe"
+                                style="margin-right: 15px; width: 130px;">Edit
+                            </a>
+                        </div>
+                    </div>
+                    <div class="dropdown-divider "></div>
+                    <div class="table-responsive pb-3">
+                        <table id="mytableP"
+                            class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                            style="width:100%">
+                            <thead class="h6">
+                                <tr>
+                                    <td class="">Permission</td>
+                                    <td class="">Admin</td>
+                                    <td class="">Manager</td>
+                                    <td class="">HOD</td>
+                                    <td class="">HRO</td>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                    <td>Create Employee</td>
+                                    <td><img src="images/True.jpg" width="25px" class="img-fluid"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Delete</td>
+                                    <td><img src="images/False.jpg" width="25px" class="img-fluid " alt=""></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Update Employee</td>
+                                    <td><img src="images/True.jpg" width="25px" class="img-fluid " alt=""></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Get Page</td>
+                                    <td><img src="images/False.jpg" width="25px" class="img-fluid " alt=""></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Emoloyee tab get</td>
+                                    <td><img src="images/False.jpg" width="25px" class="img-fluid " alt=""></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="d-none" data-tabId="tap6">
+                <div class="container-fluid px-5 mt-5 shadow-lg">
+                    <div class="table-responsive py-3">
+                        <table id="mytableSystemLogs"
+                            class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                            style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Creation Time</th>
+                                    <th>User Creator</th>
+                                    <th>Action</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class="  btn-table m-0 btn-Create ">Create</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Delete ">Delete</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Update ">Update</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Login ">Login</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Logout ">Logout</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Error ">Error</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p class=" btn-table m-0 btn-Warning ">Warning</p>
+                                    </td>
+                                    <td></td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

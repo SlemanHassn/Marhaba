@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employees</title>
+  <link rel="stylesheet" href="Css/font-awesome_6.4.2_css_all.min.css">
+  <link rel="stylesheet" href="Css/bootstrap.min.css">
+  <link rel="stylesheet" href="Css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="Css/main.css">
+  <link rel="stylesheet" href="Css/normalize.css">
+
+  <script defer src="JS/jquery-3.7.0.js"></script>
+  <script defer src="JS/jquery.dataTables.min.js"></script>
+  <script defer src="JS/dataTables.bootstrap5.min.js"></script>
+  <script defer src="JS/Employees.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  p-0  fixed-top shadow-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand " href="#"><img class="" src="images/Logo.svg" width="120px" alt="Logo"></a>
+      <ul class="navbar-nav flex-row d-none d-sm-flex  d-lg-none">
+        <li class="nav-item ">
+          <a href="#" class="nav-link effect"><img class="w-50" src="images/icons8-user-48.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link effect mx-2 mx-md-5 "><img class="w-50" src="images/search.png" alt=""></i></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link effect"><img class="w-50" src="images/recycle.png" alt=""></a>
+        </li>
+  
+      </ul>
+  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+  
+        <ul class="navbar-nav ms-auto ">
+          <li class="nav-item act">
+            <a class="nav-link  active" aria-current="page" href="Home-Page.html">Home</a>
+          </li>
+          <li class="nav-item act">
+            <a class="nav-link mx-0 mx-md-5" href="UserManagement.html">Dashborad</a>
+          </li>
+          <li class="nav-item act">
+            <a class="nav-link " href="#">ABOUT US</a>
+          </li>
+        </ul>
+  
+        <ul class="navbar-nav ms-auto flex-row d-lg-inline-flex align-items-center">
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="images/Frame.svg" alt="">
+            </a>
+            <div class="dropdown-menu p-0 " style="left: -336px; width: 400px">
+              <a class="dropdown-item notif" href="#">
+                <div class="d-flex align-items-center field">
+                  <label class="cl-checkbox ">
+                    <input class="checkbox-w" checked="false" type="checkbox">
+                    <span></span>
+                  </label>
+                  <img class="rounded-circle img-fluid border ms-2  " src="images/Frame.svg" alt="" width="43px"
+                    height="43px">
+                  <div class="mt-auto ms-2">
+                    <p class="lead m-0">HR.Lana</p>
+                    <p class="m-0">Edit the employment field description</p>
+                  </div>
+                </div>
+              </a>
+  
+              <a class="dropdown-item notif" href="#">
+                <div class="d-flex align-items-center field">
+                  <label class="cl-checkbox ">
+                    <input class="checkbox-w" checked="false" type="checkbox">
+                    <span></span>
+                  </label>
+                  <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px" height="43px">
+                  <div class="mt-auto ms-2">
+                    <p class="lead m-0">HR.Lana</p>
+                    <p class="m-0">Edit the employment field description</p>
+                  </div>
+                </div>
+              </a><a class="dropdown-item notif" href="#">
+                <div class="d-flex align-items-center field ">
+                  <label class="cl-checkbox ">
+                    <input class="checkbox-w" checked="false" type="checkbox">
+                    <span></span>
+                  </label>
+                  <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px" height="43px">
+                  <div class="mt-auto ms-2">
+                    <p class="lead m-0">HR.Lana</p>
+                    <p class="m-0">Edit the employment field description</p>
+                  </div>
+                </div>
+              </a><a class="dropdown-item notif" href="#">
+                <div class="d-flex align-items-center field">
+                  <label class="cl-checkbox ">
+                    <input class="checkbox-w" checked="false" type="checkbox">
+                    <span></span>
+                  </label>
+                  <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px" height="43px">
+                  <div class="mt-auto ms-2">
+                    <p class="lead m-0">HR.Lana</p>
+                    <p class="m-0">Edit the employment field description</p>
+                  </div>
+                </div>
+              </a><a class="dropdown-item notif" href="#">
+                <div class="d-flex align-items-center field">
+                  <label class="cl-checkbox ">
+                    <input class="checkbox-w" checked="false" type="checkbox">
+                    <span></span>
+                  </label>
+                  <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px" height="43px">
+                  <div class="mt-auto ms-2">
+                    <p class="lead m-0">HR.Lana</p>
+                    <p class="m-0">Edit the employment field description</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link text-dark h5" href="" target="blank"><img src="images/icons8-logout-30.png" width="25px"
+                alt=""></a>
+          </li>
+          </li>
+  
+          <li class="nav-item act">
+            <a class="nav-link mx-2 active" aria-current="page" href="#">
+              <div class="navbar-nav flex-column">
+                <h6 class="nav-item m-0" id="username">Sleman Hassn</h6>
+                <p class="nav-item disabled m-0" id="adminname">Admin</p>
+              </div>
+            </a>
+          </li>
+  
+        </ul>
+      </div>
+  
+    </div>
+  </nav>
+  <div class="back-ground-1">
+    <div class="Employees ">
+      <div class="sidebar-box bg-light mt-5">
+        <div class="filter text-right mt-5">
+          <button class="line btn btn-primary btn-md" type="button" data-toggle="collapse" data-target="#mobile-filter"
+            aria-expanded="false" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+        </div>
+        <div class="sidebar-container">
+          <form>
+            <div class="form-row d-flex align-items-center  flex-column">
+              <div class="d-flex justify-content-around align-items-center mt-5 mb-2 w-100 ">
+                <h5 class=" mt-2"> Filter</h5>
+                <div id="clear" class="btn line btn-primary btn-sm ">Clear Filter</div>
+              </div>
+              <div class="form-group  col-10 border shadow-lg p-2 mb-4 bg-white rounded">
+                <form class="d-flex justify-content-between " action="">
+                  <div class="input-group d-flex flex-nowrap">
+                    <div class="form-outline">
+                      <input type="search" id="searchField" class="form-control ms-2" placeholder="Search ID" />
+                      <input type="search" id="searchField1" class="form-control mt-2 ms-2" placeholder="Search Name" />
+                    </div>
+                  </div>
+                  
+                </form>
+          </form>
+        </div>
+        <div class=" form-group  col-10 border shadow-lg p-2 mb-4 bg-white rounded ">
+          <label class="mb-3" for="duration">Duration Trial Period</label>
+          <select class="form-select " id="duration" required>
+            <option selected value="3">3</option>
+            <option value="6">6</option>
+            <option value="End">End</option>
+          </select>
+        </div>
+        <div class=" form-group  col-10 border shadow-lg p-2 mb-4 bg-white rounded ">
+          <label class="mb-3" for="progress">Progress Status</label>
+          <select class="form-select" id="progress" required>
+            <option selected value="Open">Open</option>
+            <option value="Close">Close</option>
+          </select>
+        </div>
+        <div class=" form-group  col-10 border shadow-lg p-2 mb-4 bg-white rounded ">
+          <label class="mb-3" for="employee-status">Employee Status</label>
+          <select class="form-select" id="employee-status" required>
+            <option selected value="active">active</option>
+            <option value="in Leave">in Leave</option>
+            <option value="EOS">EOS</option>
+          </select>
+
+        </div>
+        <div class=" form-group  col-10 border shadow-lg p-2 mb-4 bg-white rounded ">
+          <label class="mb-3" for="deparment">Deparment </label>
+          <select class="form-select" id="deparment">
+          </select>
+
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  <div class="container-fluid px-5">
+    <div class="d-flex justify-content-between align-items-center mx-auto mt-5 ">
+      <h1 class="text-col">Staff Department </h1>
+      <a href="AddEmployee.html" class="line btn btn-primary btn-md" style="margin-right: 15px;">Open Demand
+      </a>
+    </div>
+    <div class="dropdown-divider mb-5"></div>
+    <div class="table-responsive">
+      <table id="mytableE" class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+        style="width:100%">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>FullName</th>
+            <th>Date_Of_Join</th>
+            <th>position</th>
+            <th>Department</th>
+            <th>Duration_Trial_Peiod</th>
+            <th>Birthday</th>
+            <th>Gender</th>
+            <th>Nationality</th>
+            <th>Vp</th>
+            <th>Mob1</th>
+            <th>Mob2</th>
+            <th>Whatsapp_Num</th>
+            <th>Emergency_Num</th>
+            <th>Grade</th>
+            <th>Overtime</th>
+            <th>Marital_Stutus</th>
+            <th>Progress_Stutus</th>
+            <th>Emoloyee_Stutus</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="green">
+            <td>1</td>
+            <td>Sleman Hassn</td>
+            <td>02-10-2023</td>
+            <td></td>
+            <td>FrontEnd</td>
+            <td>3</td>
+            <td>08-10-1999</td>
+            <td>male</td>
+            <td>Syrian</td>
+            <td></td>
+            <td>09****</td>
+            <td>09****</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Open</td>
+            <td>active</td>
+            <td><a href="EmployeePage.html" id="1" class="btn btn-success btn-md">Go To Details</a></td>
+          </tr>
+          <tr class="red">
+            <td></td>
+            <td>Ahmad</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>6</td>
+            <td></td>
+            <td>Male</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Close</td>
+            <td>in Leave</td>
+            <td><a href="EmployeePage.html" id="2" class="btn btn-success btn-md">Go To Details</a></td>
+          </tr>
+         
+          <tr class="yellow ">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>End</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="EmployeePage.html" id="4" class="btn btn-success btn-md">Go To Details</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>End</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><a href="EmployeePage.html" id="5" class="btn btn-success btn-md">Go To Details</a></td>
+          </tr>
+         
+        </tbody>
+
+      </table>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+
+
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+    <link rel="stylesheet" href="Css/font-awesome_6.4.2_css_all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+</head>
+
+<body>
+    <div class="back-ground-1">
+
+        <div class="container w-100 bg-light border shadow-lg p-3 mb-5 bg-white rounded position-relative">
+
+            <form action="/timetable/create" class="p-2 " method="post">
+                <div class="row mt-5 mb-4 h6 align-items-center text-end">
+                    <div class="col-md-1 ">
+                        <label class="mb-1" for="title">Title</label>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select  mb-1" name="title" id="title"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="Dep">Dep No.</label>
+                    </div>
+                    <div class="col-md-2 ">
+                        <select class="form-select  mb-1  " type="text" name="Dep" id="dep">></select>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="title">Remarks</label>
+                    </div>
+                    <div class="col-md-2 ">
+                        <select class="form-select">
+                        </select>
+                    </div>
+                </div>
+                <div class="row my-4 h6 text-md-center">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-1 " for=""></label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1  " for="total_duty">Total Duty</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="beake_">Break on Saturday</label>
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="working">Working Hours</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="start"> Start</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <label class="mb-1 " for="end"> End</label>
+
+                    </div>
+                </div>
+                <div class="row my-4 ">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Saturday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_sat"
+                            id="total_duty_sat"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_sat" id="beake_sat"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_sat" id="working_sat"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Sat_start" id="Sat_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Sat_end" id="Sat_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Sunday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_sun"
+                            id="total_duty_sun"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_sun" id="beake_sun"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_sun" id="working_sun"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Sun_start" id="Sun_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Sun_end" id="Sun_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Monday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_Mon"
+                            id="total_duty_Mon"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_Mon" id="beake_Mon"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_Mon" id="working_Mon"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Mon_start" id="Mon_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Mon_end" id="Mon_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Tuesday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_Tue"
+                            id="total_duty_Tue"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_Tue" id="beake_Tue"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_Tue" id="working_Tue"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Tue_start" id="Tue_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Tue_end" id="Tue_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Wednesday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_Wed"
+                            id="total_duty_Wed"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_Wed" id="beake_Wed"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_Wed" id="working_Wed"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Wed_start" id="Wed_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Wed_end" id="Wed_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Thursday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_Thu"
+                            id="total_duty_Thu"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_Thu" id="beake_Thu"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_Thu" id="working_Thu"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Thu_start" id="Thu_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Thu_end" id="Thu_end"></select>
+
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-md-1 me-5 me-sm-0">
+                        <label class="mb-3 h6 ">Friday</label>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="total_duty_Fri"
+                            id="total_duty_Fri"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="number" name="beake_Fri" id="beake_Fri"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="number" name="working_Fri" id="working_Fri"></select>
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1 " type="time" name="Fri_start" id="Fri_start"></select>
+
+                    </div>
+                    <div class="col-md-2">
+                        <select class="form-select mb-1  " type="time" name="Fri_end" id="Fri_end"></select>
+
+                    </div>
+                </div>
+                <div class="d-flex  position-absolute" style="right: 30px;top: 20px;">
+                    <input type="submit" class="line btn btn-primary btn-md" style="width: 80px;" value="Add"></input>
+                    <input type="button" class="line btn btn-primary ms-1 btn-md" style="width: 80px;"
+                        value="Clear"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

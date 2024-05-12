@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddPer</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Logo.svg">
+    <link rel="stylesheet" href="Css/font-awesome_6.4.2_css_all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="stylesheet" href="Css/normalize.css">
+    <script defer src="JS/jquery-3.7.0.js"></script>
+    <script defer src="JS/jquery.dataTables.min.js"></script>
+    <script defer src="JS/dataTables.bootstrap5.min.js"></script>
+    <script defer src="JS/AddP.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  p-0  fixed-top shadow-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"><img class="" src="images/Logo.svg" width="120px" alt="Logo"></a>
+            <ul class="navbar-nav flex-row d-none d-sm-flex  d-lg-none">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link effect"><img class="w-50" src="images/icons8-user-48.png" alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link effect mx-2 mx-md-5 "><img class="w-50" src="images/search.png"
+                            alt=""></i></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link effect"><img class="w-50" src="images/recycle.png" alt=""></a>
+                </li>
+    
+            </ul>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+    
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item act">
+                        <a class="nav-link  active" aria-current="page" href="Home-Page.html">Home</a>
+                    </li>
+                    <li class="nav-item act">
+                        <a class="nav-link mx-0 mx-md-5" href="UserManagement.html">Dashborad</a>
+                    </li>
+                    <li class="nav-item act">
+                        <a class="nav-link " href="#">ABOUT US</a>
+                    </li>
+                </ul>
+    
+                <ul class="navbar-nav ms-auto flex-row d-lg-inline-flex align-items-center">
+                    <li class="nav-item mx-2 dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/Frame.svg" alt="">
+                        </a>
+                        <div class="dropdown-menu p-0 " style="left: -336px; width: 400px">
+                            <a class="dropdown-item notif" href="#">
+                                <div class="d-flex align-items-center field">
+                                    <label class="cl-checkbox ">
+                                        <input class="checkbox-w" checked="false" type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <img class="rounded-circle img-fluid border ms-2  " src="images/Frame.svg" alt=""
+                                        width="43px" height="43px">
+                                    <div class="mt-auto ms-2">
+                                        <p class="lead m-0">HR.Lana</p>
+                                        <p class="m-0">Edit the employment field description</p>
+                                    </div>
+                                </div>
+                            </a>
+    
+                            <a class="dropdown-item notif" href="#">
+                                <div class="d-flex align-items-center field">
+                                    <label class="cl-checkbox ">
+                                        <input class="checkbox-w" checked="false" type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px"
+                                        height="43px">
+                                    <div class="mt-auto ms-2">
+                                        <p class="lead m-0">HR.Lana</p>
+                                        <p class="m-0">Edit the employment field description</p>
+                                    </div>
+                                </div>
+                            </a><a class="dropdown-item notif" href="#">
+                                <div class="d-flex align-items-center field ">
+                                    <label class="cl-checkbox ">
+                                        <input class="checkbox-w" checked="false" type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px"
+                                        height="43px">
+                                    <div class="mt-auto ms-2">
+                                        <p class="lead m-0">HR.Lana</p>
+                                        <p class="m-0">Edit the employment field description</p>
+                                    </div>
+                                </div>
+                            </a><a class="dropdown-item notif" href="#">
+                                <div class="d-flex align-items-center field">
+                                    <label class="cl-checkbox ">
+                                        <input class="checkbox-w" checked="false" type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px"
+                                        height="43px">
+                                    <div class="mt-auto ms-2">
+                                        <p class="lead m-0">HR.Lana</p>
+                                        <p class="m-0">Edit the employment field description</p>
+                                    </div>
+                                </div>
+                            </a><a class="dropdown-item notif" href="#">
+                                <div class="d-flex align-items-center field">
+                                    <label class="cl-checkbox ">
+                                        <input class="checkbox-w" checked="false" type="checkbox">
+                                        <span></span>
+                                    </label>
+                                    <img class="rounded-circle img-fluid border ms-2  " src="" alt="" width="43px"
+                                        height="43px">
+                                    <div class="mt-auto ms-2">
+                                        <p class="lead m-0">HR.Lana</p>
+                                        <p class="m-0">Edit the employment field description</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-dark h5" href="" target="blank"><img src="images/icons8-logout-30.png"
+                                width="25px" alt=""></a>
+                    </li>
+                    </li>
+    
+                    <li class="nav-item act">
+                        <a class="nav-link mx-2 active" aria-current="page" href="#">
+                            <div class="navbar-nav flex-column">
+                                <h6 class="nav-item m-0" id="username">Sleman Hassn</h6>
+                                <p class="nav-item disabled m-0" id="adminname">Admin</p>
+                            </div>
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+    
+        </div>
+    </nav>
+    <div class="back-ground-1">
+        <div class="container-fluid px-5 mt-5    ">
+            <div class="bg-white position-relative px-3 shadow-lg ">
+                <div class="row mt-5 pt-4 ">
+                    <div class="col-10 col-lg-4 mb-1 mb-lg-0 ">
+                        <div class="d-flex align-items-center">
+                            <label class="w-25" for="Allow">Allow</label>
+                            <select id="allow1" class="form-select ms-3 w-50" required >
+                                <option value="yes">Yes</option>
+                                <option value="no" >NO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-10 col-lg-4">
+                        <div class="d-flex align-items-center">
+                            <label class="w-25" for="role-name">Role Name</label>
+                            <input type="text" class="form-control w-50 ms-3" id="role-name">
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown-divider "></div>
+                <form action="">
+                    <div class="row mt-4 ">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="T-one">
+                                <div>
+                                    <h5>Employee</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytablePEmp"
+                                        class="table   table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+                                                    reiciendis
+                                                    commodi sed fugiat nisi animi</td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-em"
+                                                            name="yesno-0" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-emp"
+                                                            name="yesno-0" value="no" >
+                                                        <label class="form-check-label" for="no">No</label>
+                                                    </div>
+                                                </td>
+
+                                            </tr>
+                                            
+                                           
+
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="T-one">
+                                <div>
+                                    <h5>Employee</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP4"
+                                        class="table   table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-4"
+                                                            name="yesno-4" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-4">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-4"
+                                                            name="yesno-4" value="no" >
+                                                        <label class="form-check-label" for="no-4">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="T-one">
+                                <div>
+                                    <h5>Employee</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP8"
+                                        class="table   table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-8"
+                                                            name="yesno-8" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-8">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-8"
+                                                            name="yesno-8" value="no" >
+                                                        <label class="form-check-label" for="no-8">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="T-two">
+                                <div>
+                                    <h5>Leaves</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytablePLea"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                                                    tenetur,
+                                                </td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-lea"
+                                                            name="yesno-3" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-lea">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-lea"
+                                                            name="yesno-3" value="no" >
+                                                        <label class="form-check-label" for="no-lea">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                          
+                                          
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="T-two">
+                                <div>
+                                    <h5>Leaves</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP5"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-5"
+                                                            name="yesno-9" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-5">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-5"
+                                                            name="yesno-9" value="no" >
+                                                        <label class="form-check-label" for="no-5">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                            <div class="T-two">
+                                <div>
+                                    <h5>Leaves</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP9"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-9"
+                                                            name="yesno-11" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-9">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-9"
+                                                            name="yesno-11" value="no" >
+                                                        <label class="form-check-label" for="no-9">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="T-three">
+                                <div>
+                                    <h5>Documents</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytablePDoc"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-doc"
+                                                            name="yesno-12" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-doc">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-doc"
+                                                            name="yesno-12" value="no" >
+                                                        <label class="form-check-label" for="no-doc">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                           
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="T-three">
+
+                                <div>
+                                    <h5>Documents</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP6"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-6"
+                                                            name="yesno-6" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-6">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-6"
+                                                            name="yesno-6" value="no" >
+                                                        <label class="form-check-label" for="no-6">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="T-three">
+                                <div>
+                                    <h5>Documents</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP10"
+                                        class="table  table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-10"
+                                                            name="yesno-10" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-10">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-10"
+                                                            name="yesno-10" value="no" >
+                                                        <label class="form-check-label" for="no-10">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="T-four">
+                                <div>
+                                    <h5>Lonas</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytablePLon"
+                                        class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-lon"
+                                                            name="yesno-13" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-lon">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-lon"
+                                                            name="yesno-13" value="no" >
+                                                        <label class="form-check-label" for="no-lon">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="T-four">
+                                <div>
+                                    <h5>Lonas</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP7"
+                                        class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-7"
+                                                            name="yesno-17" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-7">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-7"
+                                                            name="yesno-17" value="no" >
+                                                        <label class="form-check-label" for="no-7">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="T-four">
+                                <div>
+                                    <h5>Lonas</h5>
+                                    <div class="dropdown-divider "></div>
+                                </div>
+                                <div class="table-responsive pb-3 ">
+                                    <table id="mytableP11"
+                                        class="table table-striped main-table table-bordered text-center   mb-5 bg-white rounded"
+                                        style="width:100%">
+                                        <thead class="h6">
+                                            <tr>
+                                                <td class="">Permission</td>
+                                                <td class="">Yes/No</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center">
+                                            <tr>
+                                                <td></td>
+                                                <td>
+                                                    <div class=" d-flex align-items-center justify-content-around">
+                                                        <input type="radio" class="form-check-input" id="yes-11"
+                                                            name="yesno-18" value="yes" required >
+                                                        <label class="form-check-label me-1" for="yes-11">Yes</label>
+                                                        <input type="radio" class="form-check-input" id="no-11"
+                                                            name="yesno-18" value="no" >
+                                                        <label class="form-check-label" for="no-11">No</label>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+       
+                    <div class="position-absolute" style="top: 24px;right: 15px;">
+                        <div class="d-flex align-items-center flex-column flex-lg-row  ">
+                            <input type="submit" value="Submit" class="line btn btn-primary btn-md" id="Sub"
+                                style="margin-right: 10px; width: 130px;">
+                            </input>
+                            <a href="UserManagement.html" class=" btn btn-primary line mt-1 mt-lg-0  btn-md" id="add-pe"
+                                style="margin-right: 10px; width: 130px;">Cancel
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
